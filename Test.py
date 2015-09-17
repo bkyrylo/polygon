@@ -5,14 +5,12 @@ Test.py: Description of what HelloW does.
 # no import
 __author__ = 'kyrylo'
 
-x = ("a", "b", "c")
 
-print(x)
+def do_smth(a, default):
+    if default is None:
+        print("None")
+    else:
+        print("not None")
 
-for y in x:
-    y = "0"
-    print(y)
-
-print(x)
-
-input()
+do_smth(5,
+        None)
